@@ -1,0 +1,21 @@
+[project]
+name = "exercise-3"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Max Stone", email = "stonemc@msoe.edu" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+exercise-3 = "exercise_3:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test.py", "test_*.py", "*_test.py"]
